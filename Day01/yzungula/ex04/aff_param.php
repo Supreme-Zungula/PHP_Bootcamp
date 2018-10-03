@@ -1,9 +1,8 @@
 #!/usr/bin/php
 <?php
-    $argv = func_get_args();
-    $argc = func_num_args();
+    if ($argc < 2)
+        return ;
     $i = 1;
-    
     while ($i < $argc)
     {
         echo ($argv[$i++]);
